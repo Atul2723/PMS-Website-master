@@ -1,0 +1,294 @@
+.section-fund-details{
+    
+    padding-top: 4%;
+   
+}
+.fund-details-home{
+    background: url('/images/wealthpublic4.png');
+    padding-top: 7%;
+    background-size: cover;
+    min-height: 100vh;
+}
+.fund-details-home .home-row img{
+    width: 80%;
+}
+.fund-details-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5%; */
+}
+.fund-details-heading h1{
+    font-size: 25px ;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+    position: relative;
+}
+.fund-details-heading h1::after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  top: 40px;
+  left: 70px;
+}
+.sec-fund-row{
+    
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    
+}
+.sec-fund-col:not(:last-child){
+    background-color: rgb(250, 222, 215);
+    height: 65vh;
+}
+.sec-fund-col ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10% 5%;
+    /* border: 1px solid black; */
+    
+}
+.sec-fund-col ul li{
+    /* border-bottom: 1px solid black; */
+    width: 100%;
+    padding-bottom: 5%;
+    /* padding-left: 2%; */
+    padding: 0;
+    /* border: 1px solid black; */
+    /* padding: 8px 30px; */
+    text-align: center;
+    height: 8vh;
+}
+
+.sec-fund-header{
+    min-height: 60vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-color);
+}
+.sec-fund-header img{
+    width: 100%;
+    padding: 10% 0;
+}
+
+.sec-header-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-header-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec-header-col button{
+    width: 30%;
+}
+
+.sec-fund-description{
+    /* background-color: #ffae42; */
+    padding: 2% 2%;
+    padding-right: 8%;
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sec-fund-description h1{
+    margin-bottom: 1%;
+    font-size: 30px;
+}
+.sec-fund-description p{
+    color: rgb(53, 53, 53);
+    font-size: 14px;
+}
+.sec-fund-col ul li .fund-active{
+    font-size: 30px;
+    transition: .3s all;
+    color: black;
+}
+.sec-fund-col ul li{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: gray;
+}
+.sec-fund-col ul li a{
+    font-family: 'unna';
+}
+.sec-fund-col ul li .fund-icon{
+    font-size: 20px;
+}
+.sec-fund-col ul li .fund-icon-active{
+    font-size: 60px;
+    color: black;
+}
+.fund-sec-btn{
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    margin-top: 1%;
+}
+.desc-icon{
+    color: var(--primary-color);
+    margin-right: 1.5%;
+    font-size: 30px;
+}
+.section-fund-details .section-heading{
+    padding-top: 3%;
+}
+.sec-fund-description ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    text-align: justify;
+    
+}
+
+.risk-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(244, 244, 244); */
+    /* box-shadow: 1px 2px 5px gray; */
+    /* margin: 2% 0; */
+}
+.risk-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5%;
+}
+.risk-col ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+.risk-col ul li{
+    text-align: justify;
+    font-size: 15px;
+}
+
+
+.risk-heading {
+    display: flex;
+    justify-content: center;
+
+}
+.risk-heading h3{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 22px;
+    position: relative;
+
+}
+.risk-heading h3::after{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: var(--primary-color);
+    top: 35px;
+    left: 70px;
+}
+.risk-col-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.risk-col-img img{
+    width: 100%;
+}
+@media screen and (max-width:800px){
+   .sec-fund-header{
+    padding: 5% 0;
+    align-items: start;
+
+   }
+   .sec-fund-row{
+    flex-direction: column;
+   }
+   .section-fund-details .section-heading{
+    padding: 10% 7%;
+   }
+   .sec-fund-col{
+    max-height: 45vh;
+   }
+   .sec-fund-col ul{
+    gap: 10px;
+   }
+   
+   .sec-fund-description{
+    padding: 10% 7%;
+   }
+   .sec-fund-description ul{
+     font-size: 14px;
+   }
+   .sec-fund-description p{
+     text-align: justify;
+     font-size: 14px;
+   }
+   .pms-risks{
+     padding: 0;
+     padding-bottom: 15%;
+   }
+   .pms-risks h3{
+    padding-bottom: 10%;
+    font-size: 30px;
+   }
+   .pms-risks ul{
+    gap: 30px;
+   }
+   .pms-risks ul li{
+    text-align: justify;
+    font-size: 14px;
+   }
+   .sec-fund-row{
+    width: 100%;
+    margin: 0;
+   }
+   .fund-details-heading{
+    margin: 10% 5%;
+    text-align: center;
+   }
+   .fund-details-heading h1{
+    margin-bottom: 7%;
+    font-size: 18px;
+
+   }
+   .fund-details-heading h1::after{
+    left: 50px;
+    top: 30px;
+   }
+   .fund-details-heading p{
+    font-size: 15px;
+   }
+   .risk-heading h3{
+    font-size: 18px;
+   }
+
+   .risk-heading h3::after{
+    left: 55px;
+    top: 30px;
+   }
+   .risk-col{
+    padding: 0 7%;
+   }
+}

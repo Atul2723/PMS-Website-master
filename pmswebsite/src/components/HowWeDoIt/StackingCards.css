@@ -1,0 +1,146 @@
+:root {
+    --cards: 4;
+    --cardHeight: 87vh;
+    --cardTopPadding: 1.5em;
+    --cardMargin: 4vw;
+}
+
+.vertical-container .container {
+    width: 100%;
+    margin: auto;
+}
+
+#cards {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.card {
+    position: sticky;
+    top: 100px;
+    min-height: 60vh;
+    box-shadow: 1px 2px 2px black;
+    text-align: justify;
+    width: 100%;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.card-row {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-col {
+    width: 50%;
+    padding: 0 4%;
+}
+.card-col h1{
+    color: #921e31;
+    text-align: initial;
+    font-size: 35px;
+}
+.card-col h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    background-color: black;
+    width: 30%;
+    text-align: center;
+    padding: 2% 0;
+    border-radius: 50px;
+    margin-bottom: 2%;
+}
+
+.card-col p {
+    color: rgb(95, 95, 95);
+}
+
+.card-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.card-img img {
+    width: 500px;
+    height: 300px;
+    box-shadow: 1px 5px 10px black;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .vertical-container .container{
+        width: 100%;
+        text-align: justify;
+    }
+    .card {
+        min-height: 65vh;
+        top: 100px;
+        
+    }
+    #cards{
+        gap: 50px;
+
+    }
+    .card-body{
+        justify-content: center;
+        height: 65vh;
+    }
+    .card-row{
+        padding-bottom: 10%;
+    }
+
+    .card-row {
+        width: 100%;
+    }
+
+    .card-col {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .card-col h3 {
+        font-size: 14px;
+    }
+   
+    .card-col h1 {
+        font-size: 22px;
+    }
+    .card-col p{
+        font-size: 12px;
+    }
+
+    .card-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 200px;
+    }
+}
